@@ -47,6 +47,6 @@ footer em{
   background-color: red;
 }
 
-.item{
+.item:first-child{
   color: green;
 }
