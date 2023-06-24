@@ -1,0 +1,116 @@
+/* селектор, який вибирає абстрактний короеневий тег, в якому вже інш html код */
+/* :root{
+  background: purple;
+}
+
+html {
+  max-width: 720px;
+}
+
+body {
+  background: #fff;
+}
+
+*{
+  color: red;
+}
+
+h1{
+ color: green;
+}
+
+.box{
+  background: #0074cd;
+}
+
+#user, .user{
+  color: yellow;
+}
+
+h1, h2, button{
+  color: #29ec47;
+}
+
+div > p{
+  color: white;
+}
+
+footer > .user{
+  color: coral;
+}
+
+footer em{
+  color: rgb(0, 203, 54);
+} */
+
+ .card-dark {
+  background-color: rgb(230, 230, 230);
+}
+
+/*.item{
+  color: green;
+}
+
+.item:first-child{
+  color: rgb(249, 67, 67);
+}
+
+.item:last-child{
+  color: rgb(73, 79, 191);
+}
+
+.item:nth-child(even){
+  color: rgb(246, 115, 35);
+}
+p:not(.item){
+  color: purple;
+} */
+
+.input-dark[required]{
+  background: rgb(108, 255, 35);
+}
+
+.input-dark[type='number']{
+  background: rgb(255, 31, 244);
+}
+
+.small-img[alt~='small']{
+  height: 500px;
+}
+a[rel~='ex']{
+  color: rgb(41, 135, 16);
+}
+
+button[class|='btn']{
+  background: rgb(255, 255, 255);
+}
+
+a[class*='btn']{
+  background: rgb(224, 93, 93);
+  color: rgb(0, 0, 0);
+}
+
+.btn::first-letter{
+  color: rgb(134, 255, 74);
+}
+
+.input-dark::placeholder{
+  color: blue;
+}
+
+#test:target{
+  color: rgb(224, 100, 100);
+}
+
+.link:active{
+  color: rgb(169, 0, 172);
+}
+input{
+  background-color: gray;
+}
+input:focus{
+  background-color: rgb(161, 196, 22);
+}
+.card:lang(en){
+  background-color: rgb(186, 186, 186);
+}

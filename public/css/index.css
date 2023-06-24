@@ -1,52 +1,7 @@
-/* селектор, який вибирає абстрактний короеневий тег, в якому вже інш html код */
-/* :root{
-  background: purple;
+.card > p {
+  color: rgba(27, 208, 208, 0.566);
 }
 
-html {
-  max-width: 720px;
-}
-
-body {
-  background: #fff;
-}
-
-*{
-  color: red;
-}
-
-h1{
- color: green;
-}
-
-.box{
-  background: #0074cd;
-}
-
-#user, .user{
-  color: yellow;
-}
-
-h1, h2, button{
-  color: #29ec47;
-}
-
-div > p{
-  color: white;
-}
-
-footer > .user{
-  color: coral;
-}
-
-footer em{
-  color: rgb(0, 203, 54);
-} */
-
-.card-dark {
-  background-color: red;
-}
-
-.item:first-child{
-  color: green;
+p{
+  font-family: 'Kablammo', cursive;
 }
