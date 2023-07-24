@@ -11,7 +11,7 @@
               </div>
             </nav>
         </header>
-      {{> divider}}
+      
      </div>
 
      <div class="page_block">
@@ -30,7 +30,23 @@
      </div>
 
      <div class="page_block">
-        {{> divider}}
+        <table class="table">
+            <tbody>
+                {{#each footer}}
+                <tr>
+                     {{#each links}}
+                     <td>
+                        {{text}}
+                    </td>
+                     {{/each}}
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+     </div>
+
+     <div class="page_block">
+        
         <footer class="footer row">
             <div class="col-3">
                {{> logo}}
