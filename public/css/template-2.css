@@ -10,6 +10,9 @@
 .header{
   padding: 24px;
   border-bottom: 1px solid #6c757d;
+
+  display: flex;
+  justify-content:space-between;
 }
 
 .header_logo{
@@ -57,6 +60,9 @@ margin-bottom: 80px;
 .footer{
   padding: 24px 0;
   border-top: 1px solid #6c757d;
+
+  display: flex;
+  justify-content:space-between;
 }
 
 .footer_copyright{
@@ -93,7 +99,8 @@ margin-bottom: 80px;
   border-radius: 24px;
   padding:80px;
 
-
+  display: flex;
+  flex-direction: column;
 }
 
 .button{
@@ -178,6 +185,9 @@ color: #F00;
   padding-bottom: 12px;
   border-bottom: 1px solid #dee2e6;
   margin-bottom: 40px;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .category_button{
@@ -290,4 +300,24 @@ font-weight: 400;
 
  .link_item:hover{
   color: #0014ee;
+ }
+
+ .flex_container{
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+ 
+
+  gap: 24px;
+ }
+
+ .flex_item{
+  flex-basis: 100px;
+
+  flex-grow: 2;
  }
