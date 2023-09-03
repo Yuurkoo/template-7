@@ -278,3 +278,53 @@ line-height: 100%;
 :root{
   scroll-behavior: smooth;
 }
+
+.blog{
+  display:grid;
+
+  grid-template-columns: repeat(3,1fr);
+}
+
+@media all and (max-width:800px){
+  .blog{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media all and (max-width:600px){
+  .blog{
+    grid-template-columns: 1fr;
+  }
+}
+
+.form{
+  gap: var(--space-l);
+}
+@media all and (width <= 650px){
+  .form{
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+
+    .form_info{
+      max-width: 300px;
+      width: 100%;
+    }
+
+    .form_content{
+      align-items:center;
+      text-align: center;
+    }
+  }
+}
+
+.hero_container{
+  container-type:inline-size;
+  container-name: hero;
+}
+
+@container hero (widt<960px){
+  .hero{
+    flex-direction: column;
+  }
+}

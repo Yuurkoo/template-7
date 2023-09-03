@@ -1,0 +1,29 @@
+               
+        <div class="articles_header">
+            <div class="articles_title">
+              <h3>Our Articles</h3>
+            </div>
+            <div class="articles_button">
+              <a href="#" class="articles_btn">View All</a>
+            </div>
+        </div>
+
+
+       <div class="articles">
+        {{#each articles}}
+        <div class="articles_card_block">
+          <div class="image_block">
+          <img class="articles_image" src="{{photo}}" alt="alt" >  
+          {{#if isNew}}<span class="article_poin">NEW</span>{{/if}}
+          </div>
+          <strong class="card_title">{{name}}</strong>
+          <span class="card_description">{{description}}</span>
+       
+          <button class="article_button">Read All</button>
+
+        </div>
+        
+        {{/each}}
+
+        
+       </div>

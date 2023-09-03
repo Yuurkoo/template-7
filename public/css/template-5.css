@@ -114,8 +114,8 @@ line-height: 100%;
 }
 
 .messages{
- max-width: 620px;
- width: 100%;
+ /* max-width: 620px;
+ width: 100%; */
 
  background-color: var(--color-white);
  border-radius: var(--border-radius);
@@ -187,7 +187,8 @@ line-height: 100%;
   gap: var(--space-l);
 }
 
-.advantages > div{
+.advantages > div,
+.advantage{
   display: flex;
   flex-direction:column;
   border-radius: 12px;
@@ -197,21 +198,23 @@ line-height: 100%;
 
 }
 
-.advantages > div > strong{
+.advantages > div > strong,
+.advantage > strong{
   font-size: 18px;
   font-weight: var(--weight-title);
   color: var(--color-title);
 }
 
-.advantages > div > p{
+.advantages > div > p,
+.advantage > p{
   color:  #767676;
   font-size: var(--size-d);
   line-height: 150%;
 }
 
 .form{
-  max-width: 340px;
-  width: 100%;
+  /* max-width: 340px;
+  width: 100%; */
 
   background-color: var(--color-white);
   border-radius: 12px;
@@ -287,4 +290,52 @@ line-height: 100%;
 .form_chekbox > input{
   border-radius: 4px;
   border: 1px solid #767676;
+}
+
+.advantages{
+  display:grid;
+
+  /* grid-template-columns: repeat(3, 1fr); 1fr 1fr 1fr */
+
+  /* grid-template-columns: repeat(3, minmax(50px, 1fr)) ; */
+
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
+}
+
+.main{
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, min-content);
+
+  grid-template-areas: "messages messages form" "advantages advantages advantages";
+}
+
+.messages{
+  grid-area: messages;
+}
+
+.form{
+  grid-area: form;
+}
+
+.advantages{
+  grid-area:advantages;
+}
+
+.advantage{
+  height: 100%;
+}
+
+.footer{
+  display:grid;
+
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.footer> div:first-of-type{
+
+
+  grid-column: 1/3;
 }
